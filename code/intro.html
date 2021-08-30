@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My home page</title>
+  </head>
+  <body>
+      
+    <label>Name: </label>
+    <input placeholder="type into me!" class="input-to-copy" />
+    <p class="p-to-copy-to">Nothing has happened yet.</p>
+
+    <script>
+    const input = document.querySelector('.input-to-copy');
+    const paragraph = document.querySelector('.p-to-copy-to');
+
+    input.addEventListener("keyup", function() {
+        paragraph.innerText  = "Hello " + input.value;
+    });
+    </script>
+  </body>
+</html>
